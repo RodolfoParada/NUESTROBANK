@@ -13,56 +13,53 @@
 
 <body>
 
+    <form action="">
+        <div class="container">
+            <div>
+                <h1 class="d-flex justify-content-center mt-5">Contáctanos</h1>
+            </div>
+            <div class="row bg-light">
+                <div class="col-md-6 ">
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="apellido">Apellido *</label>
+                        <input type="text" class="form-control" id="apellido">
+                    </div>
+                    <div class="form-group">
+                        <label for="lista">Por favor especifique el motivo *</label>
+                        <input type="text" class="form-control" id="lista" list="lista-texto"
+                            placeholder="-- Seleccione --">
+                        <datalist id="lista-texto"></datalist>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="form-control" id="mensaje"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <div class="form-group">
 
-    <div class="container">
-        <div>
-            <h1 class="d-flex justify-content-center mt-5">Contáctanos</h1>
+                        <button type="submit" class="form-control btn btn-success" id="button">ENVIAR MENSAJE</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="row bg-light">
-            <div class="col-md-6 ">
-                <div class="form-group">
-                    <label for="nombre">Nombre *</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre">
-                </div>
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" class="form-control" id="email" name="email">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="form-group">
-                    <label for="apellido">Apellido *</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido">
-                </div>
-                <div class="form-group">
-                    <label for="lista">Por favor especifique el motivo *</label>
-                    <input type="text" class="form-control" id="lista" list="lista-texto"
-                        placeholder="-- Seleccione --">
-                    <datalist id="lista-texto"></datalist>
-                </div>
-            </div>
-            <div class="col-md-12">
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" name="mensaje"></textarea>
-                </div>
-            </div>
-            <div class="col-md-12 mt-3">
-                <div class="form-group">
-
-                    <button type="button" class="form-control btn btn-success">ENVIAR MENSAJE</button>
-                </div>
-            </div>
 
         </div>
 
-
-
-
-
-    </div>
-
-    </div>
+    </form>
 
     <script src="./index.js"></script>
 </body>

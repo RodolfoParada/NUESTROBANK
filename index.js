@@ -23,4 +23,68 @@ otroOption.value = "Otro";
 otroOption.text = "Otro";
 selectLista.appendChild(otroOption);
 
+
 opcionesLista.appendChild(selectLista);
+
+
+var form = document.querySelector('form');
+form.addEventListener('submit', function (event) {
+    event.preventDefault(); // Prevenir comportamiento por defecto
+    // Resto del código aquí
+
+    var nombre = document.getElementById("nombre").value;
+    var email = document.getElementById("email").value;
+    var apellido = document.getElementById("apellido").value;
+    var lista = document.getElementById("lista").value;
+    var mensaje = document.getElementById("mensaje").value;
+
+    console.log("seleccion opciones", opcionesLista)
+    console.log("select lista", selectLista)
+    console.log("nombre: " + nombre)
+    console.log("email: " + email)
+    console.log("apellido: " + apellido)
+    console.log("lista: " + lista)
+    console.log("mensaje: " + mensaje)
+
+
+    let boton = document.getElementById("button");
+    boton.addEventListener("click", function () {});
+
+    if (lista === restablecerOption.value) {
+        alert(
+            `DE: ${nombre} ${apellido} (${email})
+               Asunto: ${restablecerOption.value}
+               MENSAJE:
+               ${mensaje}
+        `)
+
+    } else if (lista === solicitudOption.value) {
+        alert(
+            `DE: ${nombre} ${apellido} (${email}) 
+             Asunto: ${solicitudOption.value}
+               MENSAJE:
+                ${mensaje}
+             `)
+
+    } else if (lista === problemasOption.value) {
+        alert(
+            `DE: ${nombre} ${apellido} (${email}) 
+             Asunto: ${problemasOption.value}
+               MENSAJE:
+                ${mensaje}
+             `)
+
+    } else {
+        alert(
+            `DE: ${nombre} ${apellido} (${email})
+             Asunto : Otro
+               MENSAJE: ${otroOption.value}
+                ${mensaje}
+             `)
+    }
+
+
+
+
+
+});
